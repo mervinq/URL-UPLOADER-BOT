@@ -18,7 +18,7 @@ import time
 from datetime import datetime
 
 # the secret configuration specific things
-if bool(os.environ.get("WEBHOOK", False)):
+if bool(os.environ.get("WEBHOOK", True)):
     from config import Config
 else:
     from config import Config
